@@ -1,0 +1,154 @@
+html {
+    background: url('https://wallpaperaccess.com/full/35402.jpg') no-repeat center center fixed #000;
+    background-size: cover;
+}
+ 
+body {
+    font-family: Verdana, monospace, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: justify;
+}
+.arkaplan {
+  background-color: #000066;
+  color: white;
+  font-size: 25px;
+  padding: 3px;
+}
+.baslik {
+  background-color: maroon;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+} 
+.arkaplan2 {
+  background-color: maroon;
+  color: white;
+  padding: 1px;
+  font-size: 22px;
+} 
+.arkaplan3 {
+  background-color: maroon;
+  color: white;
+  padding: 1px;
+  font-size: 20px;
+  font-family: "Times New Roman";
+} 
+
+:root {
+  font-size: 42px;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #777;
+}
+
+:root * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.replay {
+  outline: none;
+  border: none;
+  font-size: 36px;
+  padding: 5px;
+  color: #888;
+  transition: all 3s ease-out;
+}
+
+.replay.hidden {
+  display: none;
+}
+
+.replay:hover {
+  cursor: pointer;
+}
+
+.container {
+  left: 20px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: inline;
+  line-height: 1em;
+  color: #333;
+}
+
+.array {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+}
+
+.cell {
+  margin: 5px;
+  padding: 10px;
+  
+  background-color: #eee;
+  
+  color: #222;
+  border: 5px solid #eee;
+  border-radius: 5px;
+  position: relative;
+  transition: all .4s ease-in;
+}
+
+.cell.referenced {
+  background-color: #9CEC5B;
+  border-color: #9CEC5B;
+  color: white;
+  transition: all .4s ease-out;
+}
+
+.cell.compared {
+  border-color: #50C5B7;
+  background-color: #50C5B7;
+  color: white; 
+  transition: all .4s ease-out;
+}
+
+.cell.done {
+  border-color: #6184D8;
+  background-color: #6184D8;
+  color: white;
+  transition: .5s;
+}
+
+.cell.m-right {
+  animation-name: m-right;
+  animation-duration: 1s;
+}
+
+.cell.m-left {
+  animation-name: m-left;
+  animation-duration: 1s;
+}
+
+@keyframes m-right {
+  0% {
+    left: 0%;
+  }
+  
+  33% {
+    left: 0;
+  }
+
+  100% {
+    left: 90px;
+  }
+}
+
+@keyframes m-left {
+  0% {
+    right: 0%;
+  }
+  
+  33% {
+    right: 0;
+  }
+
+  100% {
+    right: 90px;
+  }
+}
